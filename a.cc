@@ -2,7 +2,13 @@
 using namespace std;
 
 #define PI 3.1415926535897932384626
+#define ll l#include <bits/stdc++.h>
+using namespace std;
+
+#define PI 3.1415926535897932384626
 #define ll long long
+#define ld long double
+#define ull unsigned long long
 #ifndef ONLINE_JUGDE
 #define debug(x) cerr << #x << " "; _print(x); cerr<< endl;
 #elif
@@ -13,16 +19,17 @@ void _print(string t) {cerr << t;}
 void _print(char t) {cerr << t;}
 void _print(double t) {cerr << t;}
 void _print(long long t) {cerr << t;}
+template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.first); cerr << ","; _print(p.second); cerr << "}";}
 template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
-template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.ff); cerr << ","; _print(p.ss); cerr << "}";}
 void solve();
 
 int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
+	cout.tie(NULL);
 
 	#ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
@@ -31,7 +38,7 @@ int main(){
 	#endif
 
 	int t = 1;
-	cin >> t;
+	//cin >> t;
 	while(t--) solve();
 	
 	cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
@@ -40,5 +47,5 @@ int main(){
 }
 
 void solve(){
-	//here
+	// here
 }
